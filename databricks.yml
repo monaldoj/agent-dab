@@ -7,7 +7,6 @@ bundle:
 include:
   - resources/*.yml
 
-
 targets:
   dev:
     mode: development
