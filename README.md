@@ -1,6 +1,6 @@
 # Databricks Agent Asset Bundle (DAB)
 
-A comprehensive Databricks Asset Bundle (DAB) that includes both an agent definition/deployment workflow and a chatbot application for interacting with Databricks model serving endpoints.
+A demo Databricks Asset Bundle (DAB) that includes both an agent definition/deployment workflow and a chatbot application for interacting with Databricks model serving endpoints.
 
 ## Overview
 
@@ -21,11 +21,10 @@ This bundle contains:
 .
 ├── databricks.yml                    # Main bundle configuration
 ├── resources/
-│   └── agent_dab_job.yml            # Job and app definitions
+│   └── agent_dab.yml            # Job and app definitions
 ├── notebooks/
 │   ├── driver.ipynb                 # Agent definition and deployment workflow
-│   ├── agent.py                     # Agent implementation (ResponsesAgent)
-│   └── hello_world.ipynb            # Example notebook
+│   └── agent.py                     # Agent implementation (ResponsesAgent)
 └── app/
     ├── app.py                       # Dash application entry point
     ├── app.yaml                     # App deployment configuration
@@ -128,7 +127,7 @@ The app is configured for deployment as a Databricks App:
 databricks bundle deploy
 ```
 
-The app will be deployed according to the configuration in `resources/agent_dab_job.yml` under the `apps` section.
+The app will be deployed according to the configuration in `resources/agent_dab.yml` under the `apps` section.
 
 ## Model Endpoint Compatibility
 
