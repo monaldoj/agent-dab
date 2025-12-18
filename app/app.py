@@ -8,9 +8,8 @@ from DatabricksChatbot import DatabricksChatbot
 # Initialize the Dash app with a clean theme
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.FLATLY])
 
-# Create the chatbot component with a specified height
-serving_endpoint = llama4_maverick
-chatbot = DatabricksChatbot(app=app)#, endpoint_name=serving_endpoint, height='600px')
+# Create the chatbot component
+chatbot = DatabricksChatbot(app=app)
 
 # Define the app layout
 app.layout = dbc.Container([
