@@ -1,0 +1,17 @@
+# Databricks Resources configuration
+resources:
+  jobs:
+    define_deploy_agent_job:
+      name: define_deploy_agent_job
+      tasks:
+        - task_key: driver_task
+          notebook_task:
+            notebook_path: ../notebooks/driver.ipynb
+            source: WORKSPACE
+      queue:
+        enabled: true
+  apps:
+    agent_dab_app:
+      name: agent-dab-app
+      source_code_path: ../app
+      description: "Template app for a chatbot interface with an agent."

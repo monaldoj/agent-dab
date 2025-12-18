@@ -1,0 +1,17 @@
+# Make sure your workspace host is set as DATABRICKS_HOST environment variable
+# and your Personal Access Token is set as DATABRICKS_TOKEN environment variable
+
+bundle:
+  name: agent_dab 
+
+include:
+  - resources/*.yml
+
+
+targets:
+  dev:
+    mode: development
+    default: true
+
+  prod:
+    mode: production

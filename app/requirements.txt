@@ -1,0 +1,8 @@
+dash
+dash-bootstrap-components
+mlflow>=2.18.0
+python-dotenv==1.1.0
+flask>=2.3
+werkzeug>=2.3
+importlib-metadata>=7.0
+setuptools>=68
